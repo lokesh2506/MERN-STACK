@@ -1,0 +1,21 @@
+.outerbox{
+    background-color: purple;
+    width: 400px;
+    height: 250px;
+}
+#boxpad{
+    padding: 10px;
+}
+.innerbox{
+    background-color: blue;
+    height: 230px;
+    width: 380px;
+}
+.yellow,.white{
+    color: white;
+    background-color:orange;
+    padding: 3px;
+}
+.white{
+    background-color: black;
+}

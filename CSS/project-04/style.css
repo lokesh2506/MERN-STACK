@@ -1,0 +1,18 @@
+.rectangle{
+    width:450px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top:250px;
+    left:100px
+}
+
+.circle{
+    width:150px;
+    height:150px;
+    background-color: red;
+border-radius: 50%;
+position:relative;
+top:9dvb;
+left:290px;
+}

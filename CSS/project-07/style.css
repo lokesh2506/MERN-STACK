@@ -1,0 +1,33 @@
+.container>h1>span{
+    color:blueviolet;
+}
+.container>h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+.discription,.content{
+    display: flex;
+}
+.content>img{
+    margin-right: 20px;
+    width:120px;
+    height: 70px;
+}
+
+@media (max-width:600px){
+   
+   .discription{
+    display: block;
+   }
+   .content{
+    display: flex;
+    flex-direction: column;
+   }
+    .content>img{
+        margin-bottom: 20px;
+        width:100vw;
+        height: 60vh;
+       
+    }
+}
+

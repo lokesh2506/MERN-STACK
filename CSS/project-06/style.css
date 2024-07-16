@@ -1,0 +1,8 @@
+.displayprop{
+    
+    width:70vw;
+}
+.displayprop>img{
+    display: inline-block;
+    float: left;
+}

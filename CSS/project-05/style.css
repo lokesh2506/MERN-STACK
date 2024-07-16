@@ -1,0 +1,22 @@
+.outer{
+    background-color: antiquewhite;
+   
+}
+.inner1-3{
+    background-color: blue;
+    width:600px;
+    height: 100px;
+}
+.center{
+    width:600px;
+    height: 150px;
+    background-color: red;
+}
+.circle{
+    width:150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position:relative;
+    left:225px
+}
