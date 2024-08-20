@@ -421,28 +421,132 @@ GetData(1).catch((rej)=>{
 
 // await 
 
-async function DataNum(){
-   await getData();
-//    await fun should be surrounded by async
-};
+// async function DataNum(){
+//    await getData();
+// //    await fun should be surrounded by async
+// };
 
 // API
 
 const URL="https://cat-fact.herouapp.com/facts";
 
- const getFacts=()=>{
-    console.log("getting Data"); 
-    let response=fetch(URL);
-    console.log(response);
-    let data=response.json();
-    console.log(data);
+//  const getFacts=()=>{
+//     console.log("getting Data"); 
+//     let response=fetch(URL);
+//     console.log(response);
+//     let data=response.json();
+//     console.log(data);
 
+// }
+
+// function getFACTS(){
+//     fetch(URL).then((res)=>{
+//         return res.json();
+//     }).then((data)=>{
+//         console.log(data);
+//     })
+// } 
+
+
+
+
+let ToO=document.querySelector(".to");
+ToO.querySelector("img");
+
+
+// descructor 
+
+
+let id=2;
+let newName='loki';
+
+let studentTwo={
+    id,
+    newName,
+    description:'new one',
 }
 
-function getFACTS(){
-    fetch(URL).then((res)=>{
-        return res.json();
-    }).then((data)=>{
-        console.log(data);
-    })
-} 
+const{ description}=studentTwo;
+console.log(description);
+// this is known as descrutor
+
+const oldArray=[1,2,3];
+// using a destructor in array
+
+const [arrayFirstElement,arraySecondElement]=oldArray;
+console.log(arrayFirstElement,arraySecondElement)
+
+
+// fearures of es6 aboove also
+
+
+const personArray=[
+    {
+        name:"person 1",
+        age:10,
+        country:"USA"
+    },
+    {
+        name:"person 2",
+        age:20,
+        country:"UK"
+    },
+    {
+        name:"person 3",
+        age:30,
+        country:"INR"
+    },{
+        name:"person 4",
+        age:40,
+        country:"RUS"
+    },
+]
+
+// discructor
+
+const [FirstObj]=personArray;
+console.log(FirstObj)
+console.log(FirstObj.country)
+
+// map
+
+let getAllNames=personArray.map((singlePerson,index)=>{
+    return singlePerson.name;
+
+});
+console.log(getAllNames);
+
+//   filter
+let getPersonFromUSA=personArray.filter((singlePerson)=>{
+    return singlePerson.country==='USA';
+})
+console.log(getPersonFromUSA);
+
+// some -it return true or false
+//  it check if anyone of them have above 20
+let checkAnyOneisAbove20=personArray.some((person)=>{
+    return person.age>20;
+});
+console.log(checkAnyOneisAbove20);
+
+// every -it return true or false
+//  it check if all of them have above 20 age
+
+let checkAllAgeisAbove20=personArray.every((person)=>{
+    return person.age>20;
+});
+console.log(checkAllAgeisAbove20);
+
+let Fruit=["apple","orange","grapes"];
+
+// includes -it check the particular element is present on the array
+ console.log(Fruit.includes('apple'));
+
+//  indexOf  -> it return the actual index of the  
+console.log(Fruit.indexOf('apple'))
+
+// findIndex
+
+console.log(personArray.findIndex((value)=>{
+    value.country==='RUS';
+}))

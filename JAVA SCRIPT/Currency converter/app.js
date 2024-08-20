@@ -6,7 +6,8 @@ const DropDowns=document.querySelectorAll(".dropdown select");
 const btn=document.querySelector("form button");
 const fromCurr=document.querySelector(".from select");
 const toCurr=document.querySelector(".to select"); 
-
+const msg=document.querySelector(".msg");
+ 
 for(let slct of DropDowns){
     for(currCode in countryList){
         let newOption=document.createElement("option");
@@ -47,5 +48,8 @@ btn.addEventListener("click",async (evt)=>{
   let data=await response.json();
   let rate=data[toCurr.value.toLowerCase()]; 
   let finalAmt=amount*rate;
-  msg.innerText=`${amtVal} ${fromCurr.value} = ${finalAmt} ${toCurr.value}`;
+   msg.innerText=`${amtVal} ${fromCurr.value} = ${finalAmt} ${toCurr.value}`;
 });
+
+
+
