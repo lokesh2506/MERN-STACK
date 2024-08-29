@@ -41,7 +41,18 @@ import Car from './components/Car'
 import Scotter from './components/Scotter';
 import List from './components/List';
 import Timer from './components/USEEffect';
-
+// import App from './To-Do App/App';
+import MyForm from './components/formSubmission';
+// import App  from './react-router/App';
+import App from './CRUD/CrudApp'
+import { LazyHook } from './Hooks/LazyHook';
+import { CleanUpHook } from './Hooks/CleanUpFunction';
+import { USEREF } from './Hooks/UseRefHook';
+import { UseMemoHook } from './Hooks/MemoHook';
+import { CallBAckFun } from './Hooks/callBackHook';
+import ContextProvider from './Hooks/contextFolder/AppContext';
+import { Footer } from './Hooks/contextFolder/footer';
+import { Counter } from './Hooks/UseReducer';
 
 //-------------------props---------------------
 
@@ -57,13 +68,32 @@ import Timer from './components/USEEffect';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   {/* <Garage/> */}
-   {/* <App/> */}
-   {/* <Header/> */}
-  <Car/>
-  <UseStates/>
-  <List/>
-  <Timer/>
+  
+      {/* <Garage/> */}
+      {/* <App/> */}
+      {/* <Header/> */}
+      {/* <Car/>
+      <UseStates/>
+      <List/>
+      <Timer/> */}
+      {/* <MyForm/> */}
+      {/* <App/> */}
+
+      {/* <App/> */}
+      {/* <LazyHook/> */}
+      {/* <CleanUpHook/> */}
+      {/* <USEREF/> */}
+      {/* <UseMemoHook/> */}
+
+      {/* <CallBAckFun/> */}
+
+        {/* <ContextProvider>
+          <Footer/>
+        </ContextProvider> */}
+
+        {/* <Counter/> */}
+
+        <App/>
   </React.StrictMode>
 );
 
