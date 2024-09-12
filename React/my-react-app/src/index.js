@@ -33,7 +33,7 @@ import reportWebVitals from './reportWebVitals';
 // import a function from another folder js class
 
 // import Com from './components/com';
-
+import App from './App';
 // import Garage from './components/Garage';
 // import Header from './components/Header';
 import UseStates from './components/FavoriteColor';
@@ -44,7 +44,7 @@ import Timer from './components/USEEffect';
 // import App from './To-Do App/App';
 import MyForm from './components/formSubmission';
 // import App  from './react-router/App';
-import App from './CRUD/CrudApp'
+// import App from './CRUD/CrudApp'
 import { LazyHook } from './Hooks/LazyHook';
 import { CleanUpHook } from './Hooks/CleanUpFunction';
 import { USEREF } from './Hooks/UseRefHook';
@@ -53,7 +53,7 @@ import { CallBAckFun } from './Hooks/callBackHook';
 import ContextProvider from './Hooks/contextFolder/AppContext';
 import { Footer } from './Hooks/contextFolder/footer';
 import { Counter } from './Hooks/UseReducer';
-
+import AppApi from './components/Axios/AppApi';
 //-------------------props---------------------
 
 // we can sent a props(properties-> Data) in the components is known as props
@@ -93,6 +93,8 @@ root.render(
 
         {/* <Counter/> */}
 
+        {/* <App/> */}
+        {/* <App/> */}
         <App/>
   </React.StrictMode>
 );

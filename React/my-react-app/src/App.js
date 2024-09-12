@@ -1,12 +1,15 @@
+// import { CustomerAdd } from "./components/CustomerAdd";
+// import { CustomerView } from "./components/CustomerView";
+import { AppQuery } from "./components/Raect Query/AppQuery";
+import { QueryClient, QueryClientProvider } from "react-query";
 
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div>
-      <h1>
-        Lokeh kumar s
-      </h1>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <AppQuery />
+    </QueryClientProvider>
   );
 }
 
